@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.div240 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1920px;
+  height: 120px;
+}
+.tgv-logo-icon9 {
+  position: absolute;
+  top: 30.13px;
+  left: 40px;
+  width: 120px;
+  height: 59.73px;
+  object-fit: cover;
+}
+.tgv-b13,
+.tu-golden-village9 {
+  position: absolute;
+  display: inline-block;
+}
+.tgv-b13 {
+  top: 0;
+  left: calc(50% - 35px);
+}
+.tu-golden-village9 {
+  bottom: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+}
+.div241 {
+  position: absolute;
+  top: 26px;
+  left: 881px;
+  width: 158px;
+  height: 74px;
+  font-size: var(--font-size-2xl);
+  color: var(--color-gray-1000);
+}
+.logout-div8 {
+  top: calc(50% - 13.5px);
+  left: calc(50% - 30.5px);
+  display: inline-block;
+}
+.b152,
+.div242,
+.logout-div8 {
+  position: absolute;
+}
+.div242 {
+  top: 40px;
+  right: 40px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-600);
+  width: 111px;
+  height: 41px;
+  color: var(--color-white);
+}
+
+.b152 {
+  top: calc(50% + 92px);
+  left: 30px;
+  display: inline-block;
+}
+.p22 {
+  margin: 0;
+}
+.div244 {
+  bottom: 52px;
+  left: 30px;
+  font-size: var(--font-size-2xs);
+  display: inline-block;
+}
+.div244,
+.div245,
+.icon3 {
+  position: absolute;
+}
+.icon3 {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 317px;
+  object-fit: cover;
+}
+.div245 {
+  top: calc(50% + 122px);
+  left: 50px;
+  font-size: var(--font-size-xs);
+  display: inline-block;
+}
+.div243 {
+  left: 272px;
+  font-size: var(--font-size-base);
+}
+.div243,
+.div246,
+.div249 {
+  position: absolute;
+  bottom: 160px;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 360px;
+  height: 500px;
+}
+.div243:hover ~ #hover{
+  display: block;
+}
+#hover{
+  display: none;
+}
+.div246 {
+  left: 772px;
+  font-size: var(--font-size-base);
+}
+.div249 {
+  left: 1272px;
+}
+.b154,
+.div250 {
+  position: absolute;
+  top: 762px;
+  left: 1302px;
+  font-size: var(--font-size-base);
+  display: inline-block;
+}
+.div250 {
+  top: 836px;
+  font-size: var(--font-size-2xs);
+}
+.icon5 {
+  top: 420px;
+  left: 1272px;
+  width: 360px;
+  height: 317px;
+  object-fit: cover;
+}
+.div251,
+.div254,
+.icon5 {
+  position: absolute;
+}
+.div251 {
+  top: 792px;
+  left: 1322px;
+  font-size: var(--font-size-xs);
+  display: inline-block;
+}
+.div254 {
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 140px;
+}
+.span30 {
+  color: var(--color-gray-400);
+}
+.b155,
+.div253 {
+  position: absolute;
+}
+.b155 {
+  top: calc(50% - 13px);
+  right: 21px;
+  display: inline-block;
+}
+.div253 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.color-icon22 {
+  position: absolute;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconactionsearch-24px-div2 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% + 54.5px);
+  width: 40px;
+  height: 40px;
+}
+.div252 {
+  position: absolute;
+  top: 260px;
+  left: 666px;
+  width: 589px;
+  height: 60px;
+  color: var(--color-gray-1000);
+}
+.search-div {
+  position: absolute;
+  top: 277px;
+  left: 696px;
+  font-weight: 100;
+  color: var(--color-gray-300);
+  display: inline-block;
+}
+.div255 {
+  position: absolute;
+  bottom: 160px;
+  left: 272px;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-1200);
+  width: 360px;
+  height: 500px;
+  cursor: pointer;
+}
+.base-icon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.b156,
+.base-icon,
+.div256 {
+  position: absolute;
+}
+.b156 {
+  top: calc(50% - 13px);
+  left: calc(50% - 40.17px);
+  display: inline-block;
+}
+.div256 {
+  top: 657px;
+  left: 306.72px;
+  width: 290.55px;
+  height: 54px;
+  color: var(--color-white);
+}
+.afterlogin-moviepagemovieta-div4 {
+  position: relative;
+  background-color: var(--color-gray-800);
+  width: 100%;
+  height: 1080px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.div272 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1920px;
+  height: 120px;
+}
+.tgv-logo-icon11 {
+  position: absolute;
+  top: 30.13px;
+  left: 40px;
+  width: 120px;
+  height: 59.73px;
+  object-fit: cover;
+}
+.tgv-b15,
+.tu-golden-village11 {
+  position: absolute;
+  display: inline-block;
+}
+.tgv-b15 {
+  top: 0;
+  left: calc(50% - 35px);
+}
+.tu-golden-village11 {
+  bottom: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+}
+.div273 {
+  position: absolute;
+  top: 26px;
+  left: 881px;
+  width: 158px;
+  height: 74px;
+  font-size: var(--font-size-2xl);
+}
+.logout-div10 {
+  top: calc(50% - 13.5px);
+  left: calc(50% - 30.5px);
+  display: inline-block;
+}
+.b161,
+.div274,
+.logout-div10 {
+  position: absolute;
+}
+.div274 {
+  top: 40px;
+  right: 40px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-600);
+  width: 111px;
+  height: 41px;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.b161 {
+  top: calc(50% + 92px);
+  left: 30px;
+  display: inline-block;
+}
+.p34 {
+  margin: 0;
+}
+.div277 {
+  position: absolute;
+  bottom: 52px;
+  left: 30px;
+  font-size: var(--font-size-2xs);
+  display: inline-block;
+}
+.icon9 {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 317px;
+  object-fit: cover;
+}
+.div276,
+.div278,
+.icon9 {
+  position: absolute;
+}
+.div278 {
+  top: calc(50% + 122px);
+  left: 50px;
+  font-size: var(--font-size-xs);
+  display: inline-block;
+}
+.div276 {
+  left: 0;
+}
+.div276,
+.div279,
+.div282 {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 360px;
+}
+.div279 {
+  position: absolute;
+  left: calc(50% - 188.5px);
+}
+.div282 {
+  right: 17px;
+}
+.div275,
+.div282,
+.div287 {
+  position: absolute;
+}
+.div275 {
+  bottom: 160px;
+  left: 272px;
+  width: 1377px;
+  height: 500px;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.div287 {
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 140px;
+}
+.span32 {
+  color: var(--color-gray-400);
+}
+.b164,
+.div286 {
+  position: absolute;
+}
+.b164 {
+  top: calc(50% - 13px);
+  right: 21px;
+  display: inline-block;
+  cursor: pointer;
+}
+.div286 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.color-icon24 {
+  position: absolute;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconactionsearch-24px-div4 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% + 54.5px);
+  width: 40px;
+  height: 40px;
+}
+.div285 {
+  position: absolute;
+  top: 260px;
+  left: 666px;
+  width: 589px;
+  height: 60px;
+}
+.search-div1 {
+  position: absolute;
+  top: 277px;
+  left: 696px;
+  font-weight: 100;
+  color: var(--color-gray-300);
+  display: inline-block;
+}
+.afterlogin-moviepagemovieta-div6 {
+  position: relative;
+  background-color: var(--color-gray-800);
+  width: 100%;
+  height: 1080px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-1000);
+  font-family: var(--font-roboto);
+}
