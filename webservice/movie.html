@@ -34,7 +34,7 @@
           <b class="b53"><span>영화 | </span><span class="span1">리뷰</span></b>
         </div>
         <div class="div57">
-          <img class="icon" alt="" src="public/-1.svg" id="node" />
+          <input class="icon" alt="" id="node" />
           <div class="iconactionsearch-24px-div1">
             <img class="color-icon9" alt="" src="public/-color7.svg" />
           </div>
@@ -116,22 +116,29 @@
     </div>
 
     <script>
-      var button1 = document.getElementById('button-1');
+      var button1 = document.getElementById("button-1");
       if (button1) {
-        button1.addEventListener('click', function (e) {
-          window.location.href = './seat.html';
+        button1.addEventListener("click", function (e) {
+          window.location.href = "./seat.html";
         });
       }
-      var button2 = document.getElementById('button-2');
+      var button2 = document.getElementById("button-2");
       if (button2) {
-        button2.addEventListener('click', function (e) {
-          window.location.href = './seat.html';
+        button2.addEventListener("click", function (e) {
+          window.location.href = "./seat.html";
         });
       }
-      var button3 = document.getElementById('button-3');
+      var button3 = document.getElementById("button-3");
       if (button3) {
-        button3.addEventListener('click', function (e) {
-          window.location.href = './seat.html';
+        button3.addEventListener("click", function (e) {
+          window.location.href = "./seat.html";
+        });
+      }
+
+      var next = document.querySelector(".div56");
+      if (next) {
+        next.addEventListener("click", function (e) {
+          window.location.href = "./review.html";
         });
       }
     </script>

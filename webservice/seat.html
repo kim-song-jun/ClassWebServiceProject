@@ -27,9 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400&display=swap"
     />
     <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
   </head>
   <body>
@@ -87,98 +88,98 @@
               </div>
             </div>
             <div class="div20">
-              <div class="div21" id="reserve-1" onclick="OpenModal(0)">
+              <div class="div21" id="reserve-0" onclick="OpenModal(0)">
                 <div class="div22">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div25" id="reserve-2" onclick="OpenModal(1)">
+              <div class="div25" id="reserve-1" onclick="OpenModal(1)">
                 <div class="div22">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div29" id="reserve-3" onclick="OpenModal(2)">
+              <div class="div29" id="reserve-2" onclick="OpenModal(2)">
                 <div class="div30">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div33" id="reserve-4" onclick="OpenModal(3)">
+              <div class="div33" id="reserve-8" onclick="OpenModal(8)">
                 <div class="div34">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div37" id="reserve-5" onclick="OpenModal(4)">
+              <div class="div37" id="reserve-5" onclick="OpenModal(5)">
                 <div class="div34">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div41" id="reserve-6" onclick="OpenModal(5)">
+              <div class="div41" id="reserve-7" onclick="OpenModal(7)">
                 <div class="div34">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div45" id="reserve-7" onclick="OpenModal(6)">
+              <div class="div45" id="reserve-4" onclick="OpenModal(4)">
                 <div class="div34">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div49" id="reserve-8" onclick="OpenModal(7)">
+              <div class="div49" id="reserve-6" onclick="OpenModal(6)">
                 <div class="div50">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
-              <div class="div53" id="reserve-9" onclick="OpenModal(8)">
+              <div class="div53" id="reserve-3" onclick="OpenModal(3)">
                 <div class="div50">
                   <div class="div23">
-                    <span>170 </span><span class="span">/ 18</span>
+                    <span>003 </span><span class="span">/ 036</span>
                   </div>
                   <div class="div24"><b class="b">09:20</b></div>
                 </div>
               </div>
             </div>
             <div class="div57">
-              <div class="div58"><b class="b">--:-- ---</b></div>
-              <div class="not-reserved-div">Not Reserved</div>
+              <div class="div58"><b class="b" id="seat-ID">--:-- ---</b></div>
+              <div class="not-reserved-div" id="reserved">Not Reserved</div>
             </div>
-            <div class="div59">
+            <div class="div59" id="back" onclick="Back()">
               <img class="color-icon2" alt="" src="public/-color5.svg" />
             </div>
           </div>
         </div>
       </div>
-      <div class="div60" id="modal">
+      <div class="div60" id="modal-1">
         <div class="div61">
           <div class="div62">
             <b class="seat-b">Seat</b>
             <div class="div63">
               <div class="div10">
-                <span>170</span><span class="span9"> / 180</span>
+                <span>003</span><span class="span9"> / 036</span>
               </div>
-              <div class="div65">1인</div>
+              <div class="div65">0인</div>
             </div>
             <div class="div66">
               <div class="div67">
@@ -200,8 +201,8 @@
               </div>
               <div class="div78">
                 <div class="div79">
-                  <div class="div80" onclick="SelectSeat(0, 0, seleted)"></div>
-                  <div class="div81" onclick="SelectSeat(0, 1, seleted)"></div>
+                  <div class="div80"></div>
+                  <div class="div81"></div>
                   <div class="div82"></div>
                   <div class="div83"></div>
                   <div class="div84"></div>
@@ -246,10 +247,690 @@
               </div>
               <div class="div119"><div class="screen-div">screen</div></div>
             </div>
-            <div class="div120" onclick="ConfirmModal()">
+            <div class="div120" onclick="ConfirmModal(1)">
               <div class="div121" id="confirm">선택하기</div>
             </div>
-            <div class="div122" id="cancel" onclick="CloseModal()">
+            <div class="div122" id="cancel" onclick="CloseModal(1)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-2">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(2)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(2)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-3">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(3)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(3)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-4">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(4)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(4)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-5">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(5)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(5)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-6">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(6)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(6)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-7">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(7)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(7)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-8">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(8)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(8)">
+              <img class="color-icon2" alt="" src="public/-color5.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div60" id="modal-9">
+        <div class="div61">
+          <div class="div62">
+            <b class="seat-b">Seat</b>
+            <div class="div63">
+              <div class="div10">
+                <span>003</span><span class="span9"> / 036</span>
+              </div>
+              <div class="div65">0인</div>
+            </div>
+            <div class="div66">
+              <div class="div67">
+                <div class="b">1</div>
+                <div class="div69">2</div>
+                <div class="div70">3</div>
+                <div class="div71">4</div>
+                <div class="div72">5</div>
+                <div class="div73">6</div>
+                <div class="div74">7</div>
+                <div class="div75">8</div>
+                <div class="div10">9</div>
+              </div>
+              <div class="div77">
+                <div class="b">A</div>
+                <div class="b-div">B</div>
+                <div class="c-div">C</div>
+                <div class="d-div">D</div>
+              </div>
+              <div class="div78">
+                <div class="div79">
+                  <div class="div80"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div89">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div93"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div99">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div104"></div>
+                  <div class="div105"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+                <div class="div109">
+                  <div class="div90"></div>
+                  <div class="div81"></div>
+                  <div class="div82"></div>
+                  <div class="div83"></div>
+                  <div class="div84"></div>
+                  <div class="div85"></div>
+                  <div class="div86"></div>
+                  <div class="div87"></div>
+                  <div class="div88"></div>
+                </div>
+              </div>
+              <div class="div119"><div class="screen-div">screen</div></div>
+            </div>
+            <div class="div120" onclick="ConfirmModal(9)">
+              <div class="div121" id="confirm">선택하기</div>
+            </div>
+            <div class="div122" id="cancel" onclick="CloseModal(9)">
               <img class="color-icon2" alt="" src="public/-color5.svg" />
             </div>
           </div>
@@ -315,87 +996,185 @@
           3: [0, 0, 2, 0, 0, 0, 0, 0, 0],
         },
       ];
-      var QuerySeat = document.querySelector('.div78');
-      function OpenModal(k) {
-        var modal = document.getElementById('modal');
-        if (modal) {
-          selected = k;
-          modal.style.display = 'flex';
-          InitModal(k);
-        }
-      }
-      function CloseModal() {
-        var modal = document.getElementById('modal');
-        if (modal) {
-          for (let i = 0; i < seat.length; i++) {
-            for (let j = 0; j < Object.keys(seat[i]).length; j++) {
-              for (let k = 0; k < seat[i][j].length; k++) {
-                if (seat[i][j][k] == 1) {
-                  seat[i][j][k] = 0;
+      var QuerySeat = document.querySelectorAll(".div78");
+      var People = document.querySelectorAll(".div65");
+      var ModalCurrentReserved = document.querySelectorAll(".div63 .div10");
+
+      var mappingObject = {
+        0: "A",
+        1: "B",
+        2: "C",
+        3: "D",
+      };
+
+      if (QuerySeat.length > 0) {
+        for (let i = 0; i < QuerySeat.length; i++) {
+          for (let j = 0; j < QuerySeat[i].childElementCount; j++) {
+            for (
+              let k = 0;
+              k < QuerySeat[i].children[j].childElementCount;
+              k++
+            ) {
+              if (seat[i][j][k] == 1) {
+                QuerySeat[i].children[j].children[k].style.cssText =
+                  "border: 1px solid var(--color-gray-800);  background-color: var(--color-white)";
+              } else if (seat[i][j][k] == 0) {
+                QuerySeat[i].children[j].children[k].style.cssText =
+                  "border: none; background-color: var(--color-gray-100);";
+              } else if (seat[i][j][k] == 2) {
+                QuerySeat[i].children[j].children[k].style.cssText =
+                  "border: none; background-color: var(--color-black);";
+              }
+              QuerySeat[i].children[j].children[k].addEventListener(
+                "click",
+                (e) => {
+                  SelectSeat(i, j, k);
                 }
-              }
-            }
-          }
-          modal.style.display = 'none';
-        }
-      }
-      function ConfirmModal() {
-        var modal = document.getElementById('modal');
-        if (modal) {
-          for (let i = 0; i < seat.length; i++) {
-            for (let j = 0; j < Object.keys(seat[i]).length; j++) {
-              for (let k = 0; k < seat[i][j].length; k++) {
-                if (seat[i][j][k] == 1) {
-                  seat[i][j][k] = 2;
-                }
-              }
-            }
-          }
-          modal.style.display = 'none';
-        }
-      }
-      function SelectSeat(line, num, axis) {
-        if (seat[axis][line][num] == 0) {
-          seat[axis][line][num] = 1;
-          QuerySeat.children[line].children[num].style.cssText +=
-            'border: 1px solid var(--color-gray-800);  background-color: var(--color-white)';
-        } else if (seat[axis][line][num] == 1) {
-          seat[axis][line][num] = 0;
-          QuerySeat.children[line].children[num].style.cssText +=
-            'border: none; background-color: var(--color-gray-100);';
-        }
-      }
-      function InitModal(k) {
-        if (QuerySeat) {
-          for (let i = 0; i < QuerySeat.childElementCount; i++) {
-            for (let j = 0; j < QuerySeat.children[i].childElementCount; j++) {
-              if (seat[k][i][j] == 1) {
-                QuerySeat.children[i].children[j].style.cssText +=
-                  'border: 1px solid var(--color-gray-800);  background-color: var(--color-white)';
-              } else if (seat[k][i][j] == 0) {
-                QuerySeat.children[i].children[j].style.cssText +=
-                  'border: none; background-color: var(--color-gray-100);';
-              } else if (seat[k][i][j] == 2) {
-                QuerySeat.children[i].children[j].style.cssText +=
-                  'border: none; background-color: var(--color-black);';
-              }
-              QuerySeat.children[i].children[j].addEventListener('click', (e) =>
-                SelectSeat(i, j, k)
               );
             }
           }
         }
       }
-      // if (QuerySeat) {
-      //   for (let i = 0; i < QuerySeat.childElementCount; i++) {
-      //     for (let j = 0; j < QuerySeat.children[i].childElementCount; j++) {
-      //       QuerySeat.children[i].children[j].addEventListener(
-      //         'click',
-      //         SelectSeat(i, j, seleted)
-      //       );
-      //     }
-      //   }
-      // }
+
+      function OpenModal(i) {
+        console.log(`modal-${i + 1}`);
+        var modal = document.getElementById(`modal-${i + 1}`);
+        if (modal) {
+          console.log(`OpemModal-${i + 1}: open`);
+          InitModal(i);
+          console.log(i);
+          modal.style.display = "flex";
+        }
+      }
+      function CloseModal(i) {
+        var modal = document.getElementById(`modal-${i}`);
+        if (modal) {
+          console.log(`CloseModal-${i}: closed`);
+          for (let j = 0; j < Object.keys(seat[i - 1]).length; j++) {
+            for (let k = 0; k < seat[i - 1][j].length; k++) {
+              if (seat[i - 1][j][k] == 1) {
+                seat[i - 1][j][k] = 0;
+              }
+            }
+          }
+          modal.style.display = "none";
+        }
+      }
+      function ConfirmModal(i) {
+        var modal = document.getElementById(`modal-${i}`);
+        var id = document.getElementById(`reserve-${i - 1}`);
+        var reserved = document.getElementById("reserved");
+        var seatID = document.getElementById("seat-ID");
+
+        // Reserve Text
+        // console.log(reserved.innerHTML);
+
+        // Seat ID Text
+        // console.log(seatID.innerHTML);
+
+        // Current Seat Num
+        // console.log(id.children[0].children[0].children[0].innerHTML);
+
+        // Max Seat Num
+        // console.log(id.children[0].children[0].children[1].innerHTML);
+
+        // Movie Time
+        // console.log(id.children[0].children[1].children[0].innerHTML);
+
+        if (modal) {
+          console.log(`ConfirmModal-${i}: Confirmed`);
+          console.log(seat);
+          console.log(seat[i - 1]);
+          console.log(Object.keys(seat[i - 1][1]).length);
+          let copy = _.cloneDeep(seat);
+          let max = Number(
+            id.children[0].children[0].children[1].innerHTML.slice(2)
+          );
+          let current = Number(
+            id.children[0].children[0].children[0].innerHTML
+          );
+          let x = [];
+          let y = [];
+          for (let j = 0; j < Object.keys(copy[i - 1]).length; j++) {
+            for (let k = 0; k < copy[i - 1][j].length; k++) {
+              if (copy[i - 1][j][k] == 1) {
+                copy[i - 1][j][k] = 2;
+                current += 1;
+                x.push(k + 1);
+                y.push(j);
+              }
+            }
+          }
+          if (current > max) {
+            alert("overflow seat");
+            CloseModal(i);
+          } else {
+            seat = copy;
+            id.children[0].children[0].children[0].innerHTML = `${String(
+              current
+            ).padStart(3, "0")} `;
+            reserved.innerHTML = "Reserved";
+            seatID.innerHTML = `${
+              id.children[0].children[1].children[0].innerHTML
+            } ${mappingObject[y[y.length - 1]]}-${x[x.length - 1]}`;
+          }
+          modal.style.display = "none";
+        }
+      }
+      function SelectSeat(axis, line, num) {
+        let peopleNumber = Number(People[axis].innerHTML.slice(0, 1));
+        console.log(ModalCurrentReserved[axis]);
+        let currentReserved = Number(
+          ModalCurrentReserved[axis].children[0].innerHTML
+        );
+        if (seat[axis][line][num] == 0) {
+          seat[axis][line][num] = 1;
+          People[axis].innerHTML = peopleNumber + 1 + "인";
+          currentReserved += 1;
+          QuerySeat[axis].children[line].children[num].style.cssText =
+            "border: 1px solid var(--color-gray-800);  background-color: var(--color-white)";
+        } else if (seat[axis][line][num] == 1) {
+          seat[axis][line][num] = 0;
+          People[axis].innerHTML = peopleNumber - 1 + "인";
+          currentReserved -= 1;
+          QuerySeat[axis].children[line].children[num].style.cssText =
+            "border: none; background-color: var(--color-gray-100);";
+        }
+        ModalCurrentReserved[axis].children[0].innerHTML = String(
+          currentReserved
+        ).padStart(3, "0");
+        console.log(`axis: ${axis}, line: ${line}, num: ${num}`);
+      }
+      function InitModal(k) {
+        People[k].innerHTML = "0인";
+        if (QuerySeat) {
+          for (let i = 0; i < QuerySeat[k].childElementCount; i++) {
+            for (
+              let j = 0;
+              j < QuerySeat[k].children[i].childElementCount;
+              j++
+            ) {
+              if (seat[k][i][j] == 1) {
+                QuerySeat[k].children[i].children[j].style.cssText =
+                  "border: 1px solid var(--color-gray-800);  background-color: var(--color-white)";
+              } else if (seat[k][i][j] == 0) {
+                QuerySeat[k].children[i].children[j].style.cssText =
+                  "border: none; background-color: var(--color-gray-100);";
+              } else if (seat[k][i][j] == 2) {
+                QuerySeat[k].children[i].children[j].style.cssText =
+                  "border: none; background-color: var(--color-black);";
+              }
+            }
+          }
+        }
+      }
+
+      var back = document.getElementById("back");
+      if (back) {
+        back.addEventListener("click", function (e) {
+          window.location.href = "./movie.html";
+        });
+      }
     </script>
   </body>
 </html>
