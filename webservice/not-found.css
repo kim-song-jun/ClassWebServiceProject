@@ -2,15 +2,16 @@ body {
   margin: 0;
   line-height: normal;
 }
-.div193 {
+.div180 {
   position: absolute;
+  width: 100%;
   top: 0;
+  right: 0;
   left: 0;
   background-color: var(--color-white);
-  width: 1920px;
   height: 120px;
 }
-.tgv-logo-icon7 {
+.tgv-logo-icon5 {
   position: absolute;
   top: 30.13px;
   left: 40px;
@@ -18,67 +19,68 @@ body {
   height: 59.73px;
   object-fit: cover;
 }
-.tgv-b9,
-.tu-golden-village7 {
+.tgv-b6,
+.tu-golden-village5 {
   position: absolute;
   display: inline-block;
 }
-.tgv-b9 {
+.tgv-b6 {
   top: 0;
   left: calc(50% - 35px);
 }
-.tu-golden-village7 {
+.tu-golden-village5 {
   bottom: 0;
   left: 0;
   font-size: var(--font-size-lg);
 }
-.div194 {
+.div181 {
   position: absolute;
   top: 26px;
-  left: 881px;
+  left: calc(50% - 79px);
   width: 158px;
   height: 74px;
 }
-.logout-div6 {
+.logout-div5 {
   top: calc(50% - 13.5px);
   left: calc(50% - 30.5px);
   display: inline-block;
 }
-.div195,
-.div196,
-.logout-div6 {
+.div182,
+.div183,
+.logout-div5 {
   position: absolute;
 }
-.div195 {
+.div182 {
   top: 40px;
   right: 40px;
   border-radius: var(--br-xs);
-  background-color: var(--color-gray-600);
+  background-color: var(--color-gray-700);
   width: 111px;
   height: 41px;
   font-size: var(--font-size-lg);
   color: var(--color-white);
 }
-.div196 {
-  top: 351px;
+.div183 {
+  width: calc(100% - 694px);
+  top: calc(50% - 189px);
+  right: 347px;
   left: 347px;
   border-radius: var(--br-lg);
   background-color: var(--color-white);
-  width: 1226px;
   height: 480px;
 }
 .sorry-no-search-result {
   position: absolute;
-  top: 575px;
-  left: 832px;
+  top: calc(50% + 35px);
+  left: calc(50% - 128px);
   font-size: var(--font-size-xl);
   display: inline-block;
   color: var(--color-black);
 }
-.div197 {
+.div184 {
   position: absolute;
-  top: 406px;
-  left: 925px;
+  top: calc(50% - 134px);
+  left: calc(50% - 35px);
   width: 70px;
   height: 48px;
 }
@@ -88,16 +90,16 @@ body {
   left: 0;
   display: inline-block;
 }
-.div198 {
+.div185 {
   position: absolute;
-  top: 728px;
-  left: 912px;
+  top: calc(50% + 188px);
+  left: calc(50% - 48px);
   width: 97px;
   height: 26px;
   font-size: var(--font-size-lg);
-  color: var(--color-gray-300);
+  color: var(--color-gray-400);
 }
-.color-icon18 {
+.color-icon14 {
   position: absolute;
   height: calc(100% - 11.31px);
   width: calc(100% - 11.31px);
@@ -109,21 +111,20 @@ body {
   overflow: hidden;
   max-height: 100%;
 }
-.div199 {
+.div186 {
   position: absolute;
-  top: 393.06px;
-  left: 1483.06px;
+  top: calc(50% - 146.94px);
+  left: calc(50% + 523.06px);
   width: 33.94px;
   height: 33.94px;
-  cursor: pointer;
 }
-.afterlogin-moviepagemovieta-div2 {
+.notfound-div {
   position: relative;
-  background-color: var(--color-gray-800);
+  background-color: var(--color-gray-900);
   width: 100%;
   height: 1080px;
   text-align: left;
-  font-size: var(--font-size-2xl);
-  color: var(--color-gray-1000);
+  font-size: var(--font-size-3xl);
+  color: var(--color-gray-1100);
   font-family: var(--font-roboto);
 }
