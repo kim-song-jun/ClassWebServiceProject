@@ -996,6 +996,27 @@
           3: [0, 0, 2, 0, 0, 0, 0, 0, 0],
         },
       ];
+
+      var httpRequest = new XMLHttpRequest();
+      var GetData = new XMLHttpRequest();
+
+      GetData.onreadystatechange = () => {
+        /* readyState가 Done이고 응답 값이 200일 때, 받아온 response로 name과 age를 그려줌 */
+        if (GetData.readyState === XMLHttpRequest.DONE) {
+          if (GetData.status === 200) {
+            var result = GetData.response;
+            seat = result;
+          } else {
+            console.log("Request Error!");
+          }
+        }
+      };
+      GetData.open("GET", "Seat 데이터 주는 URL");
+      /* Response Type을 Json으로 사전 정의 */
+      GetData.responseType = "json";
+      /* 정의된 서버에 요청을 전송 */
+      GetData.send();
+
       var QuerySeat = document.querySelectorAll(".div78");
       var People = document.querySelectorAll(".div65");
       var ModalCurrentReserved = document.querySelectorAll(".div63 .div10");
@@ -1054,13 +1075,15 @@
         var modal = document.getElementById(`modal-${i}`);
         if (modal) {
           console.log(`CloseModal-${i}: closed`);
-          for (let j = 0; j < Object.keys(seat[i - 1]).length; j++) {
-            for (let k = 0; k < seat[i - 1][j].length; k++) {
-              if (seat[i - 1][j][k] == 1) {
-                seat[i - 1][j][k] = 0;
+          let copy = _.cloneDeep(seat);
+          for (let j = 0; j < Object.keys(copy[i - 1]).length; j++) {
+            for (let k = 0; k < copy[i - 1][j].length; k++) {
+              if (copy[i - 1][j][k] == 1) {
+                copy[i - 1][j][k] = 0;
               }
             }
           }
+          seat = copy;
           modal.style.display = "none";
         }
       }
@@ -1106,28 +1129,36 @@
         }
       }
       function SelectSeat(axis, line, num) {
+        let peopleNumber = Number(People[axis].innerHTML.slice(0, 1));
+        let currentReserved = Number(
+          ModalCurrentReserved[axis].children[0].innerHTML
+        );
         if (beforeSeat_I != -1) {
           if (
             beforeSeat_I != axis ||
             beforeSeat_J != line ||
             beforeSeat_K != num
           ) {
-            SelectSeat(beforeSeat_I, beforeSeat_J, beforeSeat_K);
+            if (seat[beforeSeat_I][beforeSeat_J][beforeSeat_K] != 2) {
+              seat[beforeSeat_I][beforeSeat_J][beforeSeat_K] = 0;
+              QuerySeat[beforeSeat_I].children[beforeSeat_J].children[
+                beforeSeat_K
+              ].style.cssText =
+                "border: none; background-color: var(--color-gray-100);";
+              currentReserved -= 1;
+              // People[axis].innerHTML = peopleNumber - 1 + "인";
+            }
           }
         }
-        let peopleNumber = Number(People[axis].innerHTML.slice(0, 1));
-        let currentReserved = Number(
-          ModalCurrentReserved[axis].children[0].innerHTML
-        );
         if (seat[axis][line][num] == 0) {
           seat[axis][line][num] = 1;
-          People[axis].innerHTML = peopleNumber + 1 + "인";
+          // People[axis].innerHTML = peopleNumber + 1 + "인";
           currentReserved += 1;
           QuerySeat[axis].children[line].children[num].style.cssText =
             "border: 1px solid var(--color-gray-800);  background-color: var(--color-white)";
         } else if (seat[axis][line][num] == 1) {
           seat[axis][line][num] = 0;
-          People[axis].innerHTML = peopleNumber - 1 + "인";
+          // People[axis].innerHTML = peopleNumber - 1 + "인";
           currentReserved -= 1;
           QuerySeat[axis].children[line].children[num].style.cssText =
             "border: none; background-color: var(--color-gray-100);";
@@ -1138,7 +1169,8 @@
         console.log(`axis: ${axis}, line: ${line}, num: ${num}`);
       }
       function InitModal(k) {
-        People[k].innerHTML = "0인";
+        People[k].innerHTML = "1인";
+        let currentReserved = 0;
         if (QuerySeat) {
           for (let i = 0; i < QuerySeat[k].childElementCount; i++) {
             for (
@@ -1155,12 +1187,15 @@
               } else if (seat[k][i][j] == 2) {
                 QuerySeat[k].children[i].children[j].style.cssText =
                   "border: none; background-color: var(--color-black);";
+                currentReserved += 1;
               }
             }
           }
+          ModalCurrentReserved[k].children[0].innerHTML = String(
+            currentReserved
+          ).padStart(3, "0");
         }
       }
-
       var back = document.getElementById("back");
       if (back) {
         back.addEventListener("click", function (e) {
@@ -1169,7 +1204,6 @@
       }
 
       function getRequest(i, j, k) {
-        httpRequest = new XMLHttpRequest();
         httpRequest.onreadystatechange = () => {
           if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
@@ -1179,7 +1213,7 @@
             }
           }
         };
-        httpRequest.open("GET", `서블릿 주소 쓰기?action=${i}${j}${k}`);
+        httpRequest.open("GET", `/getserlet/?action=${i}${j}${k}`);
         httpRequest.responseType = "json";
         httpRequest.send();
       }
